@@ -1,3 +1,4 @@
+import { ShoppingCart } from 'lucide-react'
 import ProdutoCard from './components/Card'
 import Navbar from './components/NavBar'
 import { useState } from 'react'
@@ -6,14 +7,13 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-
   return (
     <>
       <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 text-center rounded">
         Notebook
       </h1>
       <div className="grid grid-cols-3 m-4 gap-6">
-        <div className="col-start border rounded">
+        <div className="col-start border-2 shadow-xl/20 rounded">
           <ProdutoCard
             nome="Nootbook Asus"
             preço="2.400,40"
@@ -21,15 +21,15 @@ function App() {
             descricao="Notebook Asus de alta performance."
           />
         </div>
-        <div className="col-center-2 border rounded">
+        <div className="col-center-2 border-2 shadow-xl/20 rounded">
           <ProdutoCard
-            nome="Nootbook Asus"
+            nome="Nootbook Intel"
             preço="2.400,40"
             imagem="https://plus.unsplash.com/premium_photo-1681160405580-a68e9c4707f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGFkb3IlMjBwb3J0JUMzJUExdGlsfGVufDB8fDB8fHww"
             descricao="Notebook Intel de alta performance."
           />
         </div>
-        <div className="col-end border rounded">
+        <div className="col-end border shadow-xl/20 rounded">
           <ProdutoCard
             nome="Notebook Positivo"
             preço="1.500,40"
@@ -38,11 +38,11 @@ function App() {
           />
         </div>
       </div>
-      <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 text-center rounded">
+      <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 my-8 text-center rounded">
         Teclados
       </h1>
-      <div className="grid grid-cols-3 gap-6 m-4 rounded">
-        <div className="col-start border rounded">
+      <div className="grid grid-cols-3 gap-6 mb-24 mx-24 rounded">
+        <div className="col-start border shadow-xl/20 rounded">
           <ProdutoCard
             nome="Teclado Mecanico"
             preço="2.400,40"
@@ -50,15 +50,15 @@ function App() {
             descricao="Teclado Mecanico com caps Variadas"
           />
         </div>
-        <div className="col-center-2 border rounded">
+        <div className="col-center-2 border shadow-xl/20 rounded">
           <ProdutoCard
             nome="Teclado Bolinha"
             preço="2.400,40"
             imagem="https://images.unsplash.com/photo-1627827964356-a9c2f262fd64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjbGFkb3N8ZW58MHx8MHx8fDA%3D"
-            descricao="Teclado Bolinha Para masi conforto."
+            descricao="Teclado Bolinha para mais conforto."
           />
         </div>
-        <div className="col-end border rounded">
+        <div className="col-end border shadow-xl/20 rounded">
           <ProdutoCard
             nome="Teclado Apple"
             preço="1.500,40"
@@ -70,26 +70,26 @@ function App() {
       <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 text-center rounded">
         Mouses
       </h1>
-      <div className="grid grid-cols-3 m-4 gap-6 rounded text-center">
-        <div className="col-start border rounded">
+      <div className="grid grid-cols-3 m-4 gap-6 rounded">
+        <div className="col-start border shadow-xl/20 rounded">
           <ProdutoCard
-            nome="Nootbook Asus"
+            nome="Mouse Escritorio"
             preço="2.400,40"
             imagem="https://plus.unsplash.com/premium_photo-1671611822374-4719df5c89bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW91c2V8ZW58MHx8MHx8fDA%3D"
             descricao="Notebook Asus de alta performance."
           />
         </div>
-        <div className="col-center-2 border rounded text-center">
+        <div className="col-center-2 border shadow-xl/20 rounded  ml-4">
           <ProdutoCard
-            nome="Nootbook Asus"
+            nome="Mouse logitech"
             preço="2.400,40"
             imagem="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdXNlfGVufDB8fDB8fHww"
             descricao="Notebook Intel de alta performance."
           />
         </div>
-        <div className="col-end border rounded text-center">
+        <div className="col-end border shadow-xl/20 rounded text-center">
           <ProdutoCard
-            nome="Notebook Positivo"
+            nome="Mouse Ryzer Preto"
             preço="1.500,40"
             imagem="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW91c2V8ZW58MHx8MHx8fDA%3D"
             descricao="Notebook Positivo para tebalho"
