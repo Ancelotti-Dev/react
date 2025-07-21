@@ -1,6 +1,7 @@
 import { ShoppingCart } from 'lucide-react'
 import ProdutoCard from './components/Card'
 import Navbar from './components/NavBar'
+import About from './components/about'
 import { useState } from 'react'
 
 
@@ -9,11 +10,13 @@ import './App.css'
 function App() {
   return (
     <>
-      <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 text-center rounded">
+      <Navbar/>
+      <About id="Sobre"/>
+      <h1 id="Produtos" className="bg-blue-300  w-150 p-8 m-4 text-center rounded">
         Notebook
       </h1>
       <div className="grid grid-cols-3 m-4 gap-6">
-        <div className="col-start border-2 shadow-xl/20 rounded">
+        <div className="col-start  ">
           <ProdutoCard
             nome="Nootbook Asus"
             preço="2.400,40"
@@ -21,7 +24,7 @@ function App() {
             descricao="Notebook Asus de alta performance."
           />
         </div>
-        <div className="col-center-2 border-2 shadow-xl/20 rounded">
+        <div className="col-center-2   ">
           <ProdutoCard
             nome="Nootbook Intel"
             preço="2.400,40"
@@ -29,7 +32,7 @@ function App() {
             descricao="Notebook Intel de alta performance."
           />
         </div>
-        <div className="col-end border shadow-xl/20 rounded">
+        <div className="col-end  ">
           <ProdutoCard
             nome="Notebook Positivo"
             preço="1.500,40"
@@ -38,11 +41,12 @@ function App() {
           />
         </div>
       </div>
-      <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 my-8 text-center rounded">
+      <h1 className="bg-blue-300 w-150 p-8 m-4 my-8 text-center ">
         Teclados
       </h1>
-      <div className="grid grid-cols-3 gap-6 mb-24 mx-24 rounded">
-        <div className="col-start border shadow-xl/20 rounded">
+      <div className="grid grid-cols-3 gap-6 mb-24 mx-24 ">
+
+        <div className="col-start ">
           <ProdutoCard
             nome="Teclado Mecanico"
             preço="2.400,40"
@@ -50,7 +54,7 @@ function App() {
             descricao="Teclado Mecanico com caps Variadas"
           />
         </div>
-        <div className="col-center-2 border shadow-xl/20 rounded">
+        <div className="col-center-2  ">
           <ProdutoCard
             nome="Teclado Bolinha"
             preço="2.400,40"
@@ -58,7 +62,7 @@ function App() {
             descricao="Teclado Bolinha para mais conforto."
           />
         </div>
-        <div className="col-end border shadow-xl/20 rounded">
+        <div className="col-end  ">
           <ProdutoCard
             nome="Teclado Apple"
             preço="1.500,40"
@@ -67,11 +71,11 @@ function App() {
           />
         </div>
       </div>
-      <h1 className="bg-blue-300 hover:bg-blue-400 p-8 m-4 text-center rounded">
+      <h1 className="bg-blue-300 w-150 p-8 m-4 text-center ">
         Mouses
       </h1>
-      <div className="grid grid-cols-3 m-4 gap-6 rounded">
-        <div className="col-start border shadow-xl/20 rounded">
+      <div className="grid grid-cols-3 m-4 gap-6 ">
+        <div className="col-start  ">
           <ProdutoCard
             nome="Mouse Escritorio"
             preço="2.400,40"
@@ -79,7 +83,7 @@ function App() {
             descricao="Notebook Asus de alta performance."
           />
         </div>
-        <div className="col-center-2 border shadow-xl/20 rounded  ml-4">
+        <div className="col-center-2 border shadow-xl/20   ml-4">
           <ProdutoCard
             nome="Mouse logitech"
             preço="2.400,40"
@@ -87,7 +91,7 @@ function App() {
             descricao="Notebook Intel de alta performance."
           />
         </div>
-        <div className="col-end border shadow-xl/20 rounded text-center">
+        <div className="col-end border shadow-xl/20  text-center">
           <ProdutoCard
             nome="Mouse Ryzer Preto"
             preço="1.500,40"
