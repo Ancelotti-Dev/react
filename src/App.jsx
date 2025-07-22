@@ -2,6 +2,7 @@ import { ShoppingCart } from 'lucide-react'
 import ProdutoCard from './components/Card'
 import Navbar from './components/NavBar'
 import About from './components/about'
+import Contact from './components/contact'
 import { useState } from 'react'
 
 
@@ -10,6 +11,9 @@ import './App.css'
 function App() {
   return (
     <>
+      <body className="bg-gray-200 dark:bg-gray-500">
+
+      </body>
       <Navbar/>
       <About id="Sobre"/>
       <h1 id="Produtos" className="bg-blue-300  w-150 p-8 m-4 text-center rounded">
@@ -100,6 +104,7 @@ function App() {
           />
         </div>
       </div>
+      <Contact/>
     </>
   )
 }
